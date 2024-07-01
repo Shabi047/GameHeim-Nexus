@@ -1,0 +1,548 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    background-color:none;
+    color: rgb(255, 255, 255);
+    height: 158px;
+    width:100%;
+    z-index: 100;
+}
+
+#header-contents-extra{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 89.1px;
+    position: absolute;
+    display: flex;
+    background-color: rgb(33, 31, 31);
+    z-index: -1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    animation-name: h-c-e;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+}
+
+@keyframes h-c-e{
+    from{
+        top: 0px;
+    }
+    to{
+        top: 89.1px;
+    }
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    color: white;
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#logo{
+    position: absolute;
+    left: 19.5%;
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+}
+
+.filler{
+    position: absolute;
+    background-color:rgb(255, 115, 65);
+    height: 70px;
+    width: 100%;
+    z-index: -2;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+ }
+
+nav li a{
+    text-align: right;
+    color: white;
+    padding-right: 20px;
+    font-weight: 800;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+ }
+
+ nav li a:hover{
+    color: rgb(221, 88, 39);
+ }
+
+ nav button{
+    background-color: rgb(221, 88, 39);
+    color: black;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 5px;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+ }
+
+ nav button:hover{
+    background-color: rgb(245, 182, 65);
+    box-shadow: 0 0 25px rgb(245, 182, 65);
+    box-shadow: 0 0 50px rgb(245, 182, 65);
+ }
+
+ nav button a{
+    color: black;
+    padding: 3px;
+    font-weight: bolder;
+ }
+
+#main-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color: rgb(231, 227, 227);*/
+    background-color: rgb(255, 115, 65);
+    margin: 0;
+}
+
+#main-contents h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+#intro{
+    background-color: rgb(218, 218, 218);
+    border: 2px solid none;
+    padding: 4px;   
+    height: auto;
+    width: 92%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    margin-top: 10px;
+    padding: 12px;
+}
+
+.game-section{
+    background-color: rgb(218, 218, 218);
+    border: 2px solid none;
+    padding: 4px;   
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    padding: 12px;
+}
+
+#rdr2{                      /*rdr2 section*/
+    height: auto;
+    width: 92%;
+}
+
+
+#main-contents .game-section .rdr2imgcontainer{
+    position: relative;
+    border-radius: 10px;
+    width: 16%;
+}
+
+#rdr2pic{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+#rdr2pic:hover{
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    box-shadow: 0 0 40px rgb(255, 68, 0);
+  }
+
+
+.rdr2imgcontainer{
+    height:22% ;
+    width:22% ;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    position: relative;
+    left: 38%;
+}
+
+#rdr2vid{
+    height: auto;
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    position: relative;
+    left: 35%;
+}
+
+#w3{                  /*Witcher 3 section*/
+    height: auto;
+    width: 92%;
+}
+
+#main-contents .game-section .w3imgcontainer{
+    position: relative;
+    border-radius: 10px;
+    width: 22%;
+    left: 35%;
+}
+
+#w3pic{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+#w3pic:hover{
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    box-shadow: 0 0 40px rgb(255, 68, 0);
+  }
+
+#w3vid{
+    height: auto;
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    position: relative;
+    left: 35%;
+}
+
+#mex{
+    height: auto;
+    width: 92%;
+}
+
+#main-contents .game-section .meximgcontainer{
+    position: relative;
+    border-radius: 10px;
+    width: 16%;
+    left: 38%;
+}
+
+#mexpic{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+#mexpic:hover{
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    box-shadow: 0 0 40px rgb(255, 68, 0);
+  }
+
+
+#mexvid{
+    height: auto;
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    position: relative;
+    left: 35%;
+}
+
+#aboutme{
+    background-color: rgb(218, 218, 218);
+    border: 2px solid none;
+    padding: 4px;   
+    height: auto;
+    width: 92%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 12px;
+}
+
+#contactme{
+    background-color: rgb(218, 218, 218);
+    border: 2px solid none;
+    display: inline-block;
+    padding: 4px;   
+    height: auto;
+    width: 92%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 12px;
+}
+
+#contactme button{
+    background-color: rgb(221, 88, 39);
+    border-radius: 7px;
+    padding: 5px;
+    margin: 5px;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+ }
+
+#contactme button:hover{
+    background-color: rgb(245, 182, 65);
+    box-shadow: 0 0 25px rgb(245, 182, 65);
+    box-shadow: 0 0 50px rgb(245, 182, 65);
+ }
+
+ #contactme button a{
+    color: black;
+    padding: 3px;
+    font-weight: bolder;
+ }
+
+#contactme input{
+    color: black;
+    height: 30%;
+    width: 51%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+ }
+
+#contactme textarea{
+    color: black;
+    width: 51%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#contactme span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.footer-contents{
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+}
+
+footer a{
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border: 50px;
+    border-color: white;
+}
+
+@media only screen and (max-width:800px){   /*media query for responsiveness specificallly
+                                                for Samsung S8+*/
+    header h1{
+        font-weight: 600;
+        font-size: xx-large;
+        position: relative;
+        left: 8%;
+    }
+
+    #logo{
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: 87%;
+        top: 90px;
+        border-radius: 20px;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+
+    .filler{
+        width: 100%;
+        height: 156px;
+    }
+
+    #header-contents-extra{
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        top: 0%;
+        position: relative;
+        display: flex;
+        background-color: rgb(33, 31, 31);
+        z-index: -1;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    
+        animation-name: h-c-e;
+        animation-timing-function: ease-out;
+        animation-duration: 2s;
+    }
+    
+    header{
+        height: auto;
+        width:100%;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: black;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0;
+    }
+    
+     nav li a{
+        text-align: right;
+        color: white;
+        padding-right: 10px;
+        font-weight: 800;
+        font-size: xx-small;
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: ease-out;
+     }
+
+     nav li button a{
+        background-color: rgb(221, 88, 39);
+        color: black;
+        border-radius: 7px;
+        padding: 2px;
+        padding-top: none;
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: ease-out;
+     }
+
+    #main-contents{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: space-around;
+        /*background-color: rgb(231, 227, 227);*/
+        background-color: rgb(255, 115, 65);
+        margin: 0;
+        width: 100%;
+    }
+
+    #intro{
+        background-color: rgb(218, 218, 218);
+        border: 2px solid none;
+        padding: 4px;   
+        height: auto;
+        width: 92%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+        margin-top: 10px;
+        padding: 12px;
+    }
+
+    #rdr2{                      /*rdr2 section*/
+        height: auto;
+        width: 92%;
+    }
+
+    #main-contents .game-section .rdr2imgcontainer{
+        position: relative;
+        left: 10px;
+        width: 85%;
+    }
+
+    #rdr2vid{
+        position: relative;
+        left: 10px;
+        width: 95%;
+    }
+
+    #w3{                    /*Witcher 3 section*/
+        height: auto;
+        width: 92%;
+    }
+
+    #main-contents .game-section .w3imgcontainer{
+        position: relative;
+        left: 10px;
+        width: 85%;
+    }
+
+    #w3vid{
+        position: relative;
+        left: 10px;
+        width: 95%;
+    }
+
+    #mex{
+        height: auto;
+        width: 92%;
+    }
+
+    #main-contents .game-section .meximgcontainer{
+        position: relative;
+        left: 10px;
+        width: 85%;
+    }
+
+    #mexvid{
+        position: relative;
+        left: 10px;
+        width: 95%;
+    }
+
+    #aboutme{
+        background-color: rgb(218, 218, 218);
+        border: 2px solid none;
+        padding: 4px;   
+        height: auto;
+        width: 92%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 12px;
+    }
+    
+    #contactme{
+        background-color: rgb(218, 218, 218);
+        border: 2px solid none;
+        padding: 4px;   
+        height: auto;
+        width: 92%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 12px;
+    }
+    
+}
